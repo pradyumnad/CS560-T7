@@ -25,16 +25,14 @@ import opennlp.tools.tokenize.TokenizerModel;
 import opennlp.tools.util.InvalidFormatException;
 import opennlp.tools.util.Span;
 
-import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
-import org.apache.lucene.analysis.tokenattributes.CharTermAttributeImpl;
-import org.apache.lucene.util.Version;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import processing.core.*;
 import rita.wordnet.RiWordnet;
 
 @Path("/service")

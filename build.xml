@@ -26,6 +26,7 @@
 		
 		<pathelement location="dep-jar/RiTaWN.jar" />
 		<pathelement location="dep-jar/supportWN.jar" />
+		<pathelement location="dep-jar/processing-core.jar" />
 	</path>
 	
 	<target name="init">

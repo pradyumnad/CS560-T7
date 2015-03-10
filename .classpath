@@ -19,5 +19,6 @@
 	<classpathentry kind="lib" path="dep-jar/opennlp-uima-1.5.3.jar"/>
 	<classpathentry kind="lib" path="dep-jar/RiTaWN.jar"/>
 	<classpathentry kind="lib" path="dep-jar/supportWN.jar"/>
+	<classpathentry kind="lib" path="dep-jar/processing-core.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
