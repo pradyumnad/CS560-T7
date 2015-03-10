@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NLP Apps</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="style.css" />
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+	rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="">
+			<h1>== Lab 7 ==</h1>
+			<p class="lead">More NLP tools.</p>
+		</div>
+
+		<div class="col-lg-6 col-md-6">
+			<h4>
+				<button class="btn btn-default" onclick="tokenize()">Tokenizer</button>
+			</h4>
+			<h4>
+				<button class="btn btn-default" onclick="ngrams()">N-Grams</button>
+			</h4>
+			<h4>
+				<button class="btn btn-default" onclick="synonymns()">Synonyms</button>
+			</h4>
+			<h4>
+				<button class="btn btn-default" onclick="parents()">Parents</button>
+				<p class="small">Format : Word1,Word2</p>
+			</h4>
+		</div>
+
+		<div class="col-lg-6 col-md-6">
+			<form role="form">
+				<div class="form-group">
+					<label for="sentence">Input Word/Sentence:</label> <input
+						type="text" class="form-control" id="sentence">
+				</div>
+				<div class="form-group">
+					<label for="result">Results:</label>
+					<div id="result">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- /.container -->
+	<script type="text/javascript"
+		src="https://code.jquery.com/jquery-2.1.3.min.js">
+		
+	</script>
+	<script
+		src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
+		
+	</script>
+	
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

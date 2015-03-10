@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.cloudfoundry.appcloudserver.classPathProvider/Cloud Foundry (Runtime) v1.0"/>
+	<classpathentry kind="lib" path="dep-jar/com.ibm.ws.javaee.jaxrs.1.1_1.0.1.jar"/>
+	<classpathentry kind="lib" path="dep-jar/lucene-analyzers-common-5.0.0.jar"/>
+	<classpathentry kind="lib" path="dep-jar/lucene-core-5.0.0.jar"/>
+	<classpathentry kind="lib" path="dep-jar/lucene-queryparser-5.0.0.jar"/>
+	<classpathentry kind="lib" path="dep-jar/org.json-20120521.jar"/>
+	<classpathentry kind="lib" path="dep-jar/opennlp-maxent-3.0.3.jar"/>
+	<classpathentry kind="lib" path="dep-jar/opennlp-tools-1.5.3.jar" sourcepath="/Users/pradyumnad/.m2/repository/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-tools-1.5.3-sources.jar"/>
+	<classpathentry kind="lib" path="dep-jar/opennlp-uima-1.5.3.jar"/>
+	<classpathentry kind="lib" path="dep-jar/RiTaWN.jar"/>
+	<classpathentry kind="lib" path="dep-jar/supportWN.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
