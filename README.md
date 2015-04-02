@@ -2,4 +2,4 @@
 Demos of Wordnet, OpenNLP and Apache Lucene.
 
 ##Demo
-http://nlplab7.mybluemix.net/
+http://nlpservices.mybluemix.net/

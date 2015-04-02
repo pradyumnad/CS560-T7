@@ -1,7 +1,7 @@
 applications:
 - disk_quota: 1024M
-  host: nlplab7
-  name: nlplab7
+  host: nlpservices
+  name: nlpservices
   path: webStarterApp.war
   domain: mybluemix.net
   instances: 1
