@@ -7,6 +7,10 @@
 	<servlet>
 		<servlet-name>javax.ws.rs.core.Application</servlet-name>
 		<load-on-startup>1</load-on-startup>
+        <init-param>
+            <param-name>com.sun.jersey.spi.container.ContainerResponseFilters</param-name>
+            <param-value>com.ibm.cloudoe.samples.ResponseCorsFilter</param-value>
+        </init-param>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>javax.ws.rs.core.Application</servlet-name>

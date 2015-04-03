@@ -15,6 +15,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.Response;
 
 import opennlp.tools.chunker.ChunkerME;
 import opennlp.tools.chunker.ChunkerModel;
@@ -32,7 +33,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import processing.core.*;
 import rita.wordnet.RiWordnet;
 
 @Path("/service")
@@ -50,8 +50,19 @@ public class ServiceController {
 	}
 
 	@GET
-	public String getMessage() {
-		return "Hello Pardhu";
+	@Produces("application/json")
+	public Response getMessage() throws JSONException {
+
+		JSONObject object = new JSONObject();
+		object.put("message", "Hello Pardhu.");
+
+		return Response.ok(object.toString())
+				.header("Access-Control-Allow-Origin", "*")
+				.header("Access-Control-Allow-Headers", "origin, content-type, accept, authorization")
+				.header("Access-Control-Allow-Credentials", "true")
+				.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD")
+				.header("Access-Control-Max-Age", "1209600")
+				.build();
 	}
 
 	@GET
@@ -202,7 +213,7 @@ public class ServiceController {
 	@GET
 	@Produces("application/json")
 	@Path("/pos/{sentence}")
-	public String getPos(@PathParam("sentence") String sentence)
+	public Response getPos(@PathParam("sentence") String sentence)
 			throws JSONException, IOException {
 
 		URL tokenurl = this.getClass().getClassLoader()
@@ -225,10 +236,17 @@ public class ServiceController {
 		POSTaggerME taggerME = new POSTaggerME(posModel);
 		String[] tags = taggerME.tag(tokens);
 
+
 		JSONObject object = new JSONObject();
 		object.put("sentence", sentence);
 		object.put("tokens", tokens);
 		object.put("results", tags);
-		return object.toString();
+		return Response.ok(object.toString())
+				.header("Access-Control-Allow-Origin", "*")
+				.header("Access-Control-Allow-Headers", "origin, content-type, accept, authorization")
+				.header("Access-Control-Allow-Credentials", "true")
+				.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD")
+				.header("Access-Control-Max-Age", "1209600")
+				.build();
 	}
 }

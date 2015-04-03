@@ -15,7 +15,8 @@
 		<pathelement location="bin" />
 		<pathelement location="dep-jar/com.ibm.ws.javaee.jaxrs.1.1_1.0.1.jar" />
 		<pathelement location="dep-jar/org.json-20120521.jar" />
-		
+		<pathelement location="dep-jar/jersey-bundle-1.17.1.jar" />
+
 		<pathelement location="dep-jar/lucene-core-5.0.0.jar" />
 		<pathelement location="dep-jar/lucene-queryparser-5.0.0.jar" />
 		<pathelement location="dep-jar/lucene-analyzers-common-5.0.0.jar" />
